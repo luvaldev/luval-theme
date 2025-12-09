@@ -47,7 +47,7 @@ body {
   .sidebarList__5e434
   /* channel list (includes dm list) */
   ,
-  .panels__5e434
+  .panels__5e434 
   /* user panel */
   ,
   .chat_f75fb0>.subtitleContainer_f75fb0
@@ -144,10 +144,12 @@ body {
   .panels__5e434
 
   /* user panel */
-    {
+{
     bottom: 0;
     left: 0;
     width: 100%;
+    top: 0;
+    height: auto;
   }
 
   .sidebar__5e434
@@ -161,7 +163,7 @@ body {
 
   /* server list */
     {
-    margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
+    margin-bottom: 0;
     margin-right: var(--gap);
   }
 
@@ -191,7 +193,7 @@ body {
 
   /* channel list */
     {
-    margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
+    margin-bottom: 0;
   }
 
   .container__2637a
