@@ -29,19 +29,6 @@ body {
 }
 
 .visual-refresh {
-
-  .activityPanel__5dec7,
-  .container_d02962 {
-    /* Añade un poco más de espacio debajo de la información de actividad */
-    margin-bottom: 6px;
-  }
-
-  .voiceContainer_d02962 {
-    /* Añade un relleno interno al contenedor de voz si se ve pegado a los bordes */
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
   /* panel separation */
   .guilds__5e434
   /* server list */
@@ -150,8 +137,6 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    top: 0;
-    height: auto;
   }
 
   .sidebar__5e434
@@ -165,7 +150,7 @@ body {
 
   /* server list */
     {
-    margin-bottom: 0;
+    margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
     margin-right: var(--gap);
   }
 
@@ -195,7 +180,7 @@ body {
 
   /* channel list */
     {
-    margin-bottom: 0;
+    margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
   }
 
   .container__2637a
