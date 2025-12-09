@@ -29,17 +29,19 @@ body {
 }
 
 .visual-refresh {
+
   .activityPanel__5dec7,
-    .container_d02962 {
-      /* Añade un poco más de espacio debajo de la información de actividad */
-      margin-bottom: 6px;
-    }
-  
-    .voiceContainer_d02962 {
-      /* Añade un relleno interno al contenedor de voz si se ve pegado a los bordes */
-      padding-top: 4px;
-      padding-bottom: 4px;
-    }
+  .container_d02962 {
+    /* Añade un poco más de espacio debajo de la información de actividad */
+    margin-bottom: 6px;
+  }
+
+  .voiceContainer_d02962 {
+    /* Añade un relleno interno al contenedor de voz si se ve pegado a los bordes */
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
   /* panel separation */
   .guilds__5e434
   /* server list */
@@ -47,7 +49,7 @@ body {
   .sidebarList__5e434
   /* channel list (includes dm list) */
   ,
-  .panels__5e434 
+  .panels__5e434
   /* user panel */
   ,
   .chat_f75fb0>.subtitleContainer_f75fb0
@@ -144,7 +146,7 @@ body {
   .panels__5e434
 
   /* user panel */
-{
+    {
     bottom: 0;
     left: 0;
     width: 100%;
@@ -161,7 +163,7 @@ body {
 
   /* server list */
     {
-    margin-bottom: 0;
+    margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
     margin-right: var(--gap);
   }
 
