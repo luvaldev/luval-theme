@@ -18,7 +18,7 @@ body {
     /* normal text font weight. DOES NOT AFFECT BOLD TEXT */
 
     /* sizes */
-    --gap: 12px;
+    --gap: 4px;
     /* spacing between panels */
     --divider-thickness: 4px;
     /* thickness of unread messages divider and highlighted message borders */

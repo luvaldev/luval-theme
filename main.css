@@ -29,6 +29,17 @@ body {
 }
 
 .visual-refresh {
+  .activityPanel__5dec7,
+    .container_d02962 {
+      /* Añade un poco más de espacio debajo de la información de actividad */
+      margin-bottom: 6px;
+    }
+  
+    .voiceContainer_d02962 {
+      /* Añade un relleno interno al contenedor de voz si se ve pegado a los bordes */
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
   /* panel separation */
   .guilds__5e434
   /* server list */
