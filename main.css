@@ -193,7 +193,7 @@ body {
 
   /* channel list */
     {
-    margin-bottom: 0;
+    margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
   }
 
   .container__2637a
