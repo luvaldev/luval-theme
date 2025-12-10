@@ -1626,11 +1626,12 @@ body {
     }
 
     .visual-refresh {
-        .title_c38106, 
-        .trailing_c38106 > a[href="https://support.discord.com"]
-        {
+
+        .title_c38106,
+        .trailing_c38106>a[href="https://support.discord.com"] {
             display: none;
         }
+
         .trailing_c38106 {
             position: absolute;
             top: calc(var(--top-bar-height) + 8px + var(--border-thickness));
@@ -1639,61 +1640,88 @@ body {
             z-index: 1000;
             padding-right: var(--space-xs);
             height: 32px;
+            /* INICIO: Ocultar por defecto */
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            /* FIN: Ocultar por defecto */
         }
+
+        /* Regla para mostrar los botones al pasar el ratón por la barra superior */
+        .bar_c38106:hover .trailing_c38106 {
+            opacity: 1;
+        }
+
         .systemBar_c38106 .trailing_c38106 {
             top: var(--space-xs);
         }
+
         .winButtons_c38106 {
             padding: 0;
         }
+
         .winButton_c38106 {
             height: calc(var(--window-control-size) * 2);
         }
+
         .winButtons_c38106::before {
             height: 16px;
             width: var(--space-xs);
             box-sizing: border-box;
             margin: 0;
         }
+
         .toolbar__9293f {
             padding-right: var(--top-bar-right-margin);
         }
+
         .headerBar__8a7fc {
             padding-right: calc(var(--top-bar-right-margin) + var(--space-sm));
         }
+
         .searchFloating__1ac1c {
             right: calc(var(--top-bar-right-margin) + var(--space-sm));
         }
+
         .balanceWidgetMenu__80679 {
             margin-right: var(--top-bar-right-margin);
         }
+
         .inviteToolbar__133bf {
             padding-right: 0;
         }
-        .chat_f75fb0 > .layerContainer__59d0d {
+
+        .chat_f75fb0>.layerContainer__59d0d {
             z-index: 999;
         }
+
         .subtitleContainer_f75fb0 {
             height: var(--custom-channel-header-height);
         }
+
         .title_f75fb0.container__9293f {
             height: auto;
             min-height: 0;
         }
     }
-    .base__5e434:has(.notice__6e2b9) > .bar_c38106 > .trailing_c38106 {
+
+    .base__5e434:has(.notice__6e2b9)>.bar_c38106>.trailing_c38106 {
         top: calc(var(--top-bar-height) + 8px + 40px + var(--gap) + var(--border-thickness));
     }
+
     .base__5e434:has(.winButtons_c38106) {
         --top-bar-right-margin: calc(32px + 3 * var(--space-xs) + 6 * var(--window-control-size));
     }
+
     .base__5e434:has(.trailing_c38106 > .button__85643) {
         --top-bar-right-margin: calc(32px * 2 + 2 * var(--space-xs));
     }
+
     .base__5e434:has(.winButtons_c38106):has(.trailing_c38106 > .button__85643) {
         --top-bar-right-margin: calc(32px * 2 + 4 * var(--space-xs) + 6 * var(--window-control-size));
     }
 }
+
+
 
 @property --top-bar-title-position {
     syntax: 'off | hide | left';
